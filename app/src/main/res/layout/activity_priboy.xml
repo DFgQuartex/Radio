@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263238">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <ToggleButton
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:id="@+id/stopButton"
+            android:src="@drawable/stop"
+            android:background="@drawable/toggle_stop"
+            android:layout_gravity="bottom"
+            android:textOff="@null"
+            android:textOn="@null"
+            android:layout_weight="0.05"
+            android:layout_alignTop="@+id/playpause"
+            android:layout_toLeftOf="@+id/playpause"
+            android:layout_toStartOf="@+id/playpause"
+            android:layout_marginRight="41dp"
+            android:layout_marginEnd="41dp" />
+
+        <ToggleButton
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:id="@+id/playpause"
+            android:background="@drawable/toggle_playback"
+            android:textOff="@null"
+            android:textOn="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="115dp"
+            android:layout_marginEnd="115dp" />
+    </RelativeLayout>
+
+</LinearLayout>
